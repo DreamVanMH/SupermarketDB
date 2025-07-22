@@ -1,0 +1,28 @@
+@model SupermarketDB.Models.Product
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div class="container mt-4">
+    <h2>@Model.Name</h2>
+
+    <div class="row mt-4">
+        <div class="col-md-6">
+            @if (Model.ImageData != null)
+            {
+                <img src="@Url.Action("GetImage", "Product", new { id = Model.Id })" class="img-fluid rounded shadow" />
+            }
+            else
+            {
+                <p><em>No image available</em></p>
+            }
+        </div>
+        <div class="col-md-6">
+            <h4>Price: <span class="text-success">$@Model.Price.ToString("F2")</span></h4>
+            <p>This is a featured product in our store.</p>
+
+            <a asp-action="Index" class="btn btn-secondary mt-3">← Back to Product List</a>
+        </div>
+    </div>
+</div>

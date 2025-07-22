@@ -1,0 +1,80 @@
+﻿@model IEnumerable<SupermarketDB.Models.Product>
+
+@{
+    ViewData["Title"] = "Home";
+}
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+<style>
+    body {
+        background: linear-gradient(to right, #f8f9fa, #e0f7fa);
+    }
+
+    .carousel img {
+        height: 400px;
+        object-fit: cover;
+    }
+</style>
+
+<div class="container py-5">
+    <h1 class="text-center mb-4">Welcome to Supermarket</h1>
+
+    <!-- Carousel Banner -->
+    <div id="bannerCarousel" class="carousel slide mb-5 shadow rounded" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/img/banner1.png" class="d-block w-100" alt="Banner 1">
+            </div>
+            <div class="carousel-item">
+                <img src="/img/banner2.png" class="d-block w-100" alt="Banner 2">
+            </div>
+            <div class="carousel-item">
+                <img src="/img/banner3.png" class="d-block w-100" alt="Banner 3">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#bannerCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#bannerCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Product Preview Section -->
+    <h2 class="mb-4">Featured Products</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        @foreach (var item in Model.Take(6))
+        {
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    @if (item.ImageData != null)
+                    {
+                        <img src="@Url.Action("GetImage", "Product", new { id = item.Id })" class="card-img-top"
+                            alt="@item.Name" style="object-fit:cover; height:200px;">
+                    }
+                    else
+                    {
+                        <img src="/img/placeholder.png" class="card-img-top" alt="No Image"
+                            style="object-fit:cover; height:200px;">
+                    }
+                    <div class="card-body">
+                        <h5 class="card-title">@item.Name</h5>
+                        <p class="card-text fw-bold text-success">$@item.Price</p>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                        <a asp-controller="Product" asp-action="Details" asp-route-id="@item.Id"
+                            class="btn btn-sm btn-outline-primary w-100">View Details</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+    <div class="text-center mt-5">
+        <a asp-controller="Product" asp-action="Index" class="btn btn-primary btn-lg px-5">Browse All Products</a>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
