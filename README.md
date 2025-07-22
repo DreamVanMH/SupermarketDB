@@ -28,7 +28,7 @@ This is a web-based supermarket management system built with **ASP.NET MVC**. It
 
 ## 📷 Screenshots
 
-> (You can insert screenshots here or use `/wwwroot/img/xxx.png`)
+>
 
 ---
 
