@@ -114,7 +114,28 @@ Developed for Programming for the Internet
 
  Order history with receipts
 
-📜 License
-This project is for educational use only.
-Not intended for commercial or production deployment.
+📜 MIT License
+
+Copyright (c) 2025 DreamVanMH
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction...
+
+---
+
+Educational Use Notice:
+This project is intended for **educational and demonstration purposes only**.
+All trademarks and product images referenced (e.g., from Amazon.ca) are the property of their respective owners.
+No commercial use or distribution of such materials is intended or permitted.
+
+## 🛡️ Image Use Disclaimer
+
+All product images shown in this project are referenced from Amazon.ca and are used **strictly for educational and non-commercial purposes only**.
+The copyright and trademarks of all product images belong to their respective owners.
+This project is not affiliated with or endorsed by Amazon in any way.
+
+If you are the copyright holder and believe any content should be removed, please contact us.
+
+---
 ````
