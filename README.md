@@ -34,6 +34,11 @@ This is a web-based supermarket management system built with **ASP.NET MVC**. It
 
 ## 🚀 Getting Started
 
+Copy the sample config and fill in your own credentials:
+
+````bash
+cp appsettings.Template.json appsettings.json
+
 ### 1. Clone the repository
 
 ```bash
@@ -112,4 +117,4 @@ Developed for Programming for the Internet
 📜 License
 This project is for educational use only.
 Not intended for commercial or production deployment.
-```
+````
