@@ -28,7 +28,7 @@ This is a web-based supermarket management system built with **ASP.NET MVC**. It
 
 ## 📷 Screenshots
 
->
+> img reference from Amazon.ca, only for educational purpose
 
 ---
 
