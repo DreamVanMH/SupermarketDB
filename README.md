@@ -1,10 +1,10 @@
-# SupermarketDB 🛒
+# SupermarketDB 
 
 This is a web-based supermarket management system built with **ASP.NET MVC**. It allows users to manage product inventory and customer data through a user-friendly interface. The project supports basic CRUD operations, image uploads, and email notifications.
 
 ---
 
-## 🔧 Tech Stack
+## Tech Stack
 
 - **.NET 7 / .NET 8**
 - **ASP.NET MVC**
@@ -15,7 +15,7 @@ This is a web-based supermarket management system built with **ASP.NET MVC**. It
 
 ---
 
-## 📦 Features
+## Features
 
 - ✅ Add/Edit/Delete products
 - ✅ View customer list and details
@@ -26,13 +26,13 @@ This is a web-based supermarket management system built with **ASP.NET MVC**. It
 
 ---
 
-## 📷 Screenshots
+## Screenshots
 
 > img reference from Amazon.ca, only for educational purpose
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 Copy the sample config and fill in your own credentials:
 
@@ -63,7 +63,7 @@ Copy
 Edit
 dotnet ef migrations add InitialCreate
 dotnet ef database update
-📬 Email Configuration
+Email Configuration
 Email settings are stored in appsettings.json. You need to provide your SMTP credentials to send emails:
 
 json
@@ -77,9 +77,9 @@ Edit
   "Username": "your@gmail.com",
   "Password": "your-app-password"
 }
-⚠️ Use an App Password if using Gmail and enable "Less secure app access" if needed.
+Use an App Password if using Gmail and enable "Less secure app access" if needed.
 
-📁 Project Structure
+Project Structure
 bash
 Copy
 Edit
@@ -93,7 +93,7 @@ SupermarketDB/
 ├── wwwroot/img/          # Image uploads
 ├── appsettings.json      # Configuration
 └── Program.cs            # Application entry point
-🧪 Sample SQL Queries
+Sample SQL Queries
 Test in SSMS or SQLite CLI:
 
 sql
@@ -101,13 +101,13 @@ Copy
 Edit
 SELECT * FROM products;
 SELECT * FROM customers;
-📅 Final Project Info
+Final Project Info
 Developed for Programming for the Internet
-📍 Fairleigh Dickinson University, Vancouver Campus
-📅 July 2025
-👤 Student: DreamVanMH
+Fairleigh Dickinson University, Vancouver Campus
+July 2025
+Student: DreamVanMH
 
-⭐ Future Improvements
+Future Improvements
  Add role-based authentication (admin/user)
 
  Shopping cart and checkout system
